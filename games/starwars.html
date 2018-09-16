@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Star Wars Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/sw-style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="../assets/images/sw/favicon.png"/>
+</head>
+
+<body>
+    <div id="selectionCont">
+        <div id='selectText'>Select a Character</div>
+        <div class="selectImg">
+        </div>
+    </div>
+    <br>
+    <div class="yourImg">
+        <div id='charText'></div>
+    </div>
+    <img id='attackBtn' src="../assets/images/sw/attack.png">
+    <img id='resetBtn' src="../assets/images/sw/reset.png">
+    <div class="defender">
+        <div class="defenderText"></div>
+    </div>
+    <div class="enemies">
+        <div id='enemiesText'></div> 
+    </div>
+    <div class="defeated">
+        <div id='defeatedText'></div>
+    </div>
+    <div id="resultsText1" class='txt'></div>
+    <div id="resultsText2" class='txt'></div>
+    <div id="winlose" class="txt"></div>
+    <script src="../assets/javascript/starwars.js"></script>
+</body>
+
+</html>

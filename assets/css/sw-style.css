@@ -1,0 +1,68 @@
+#selectionCont {
+    width: 100%;
+    background-color:#360606;
+    text-align:center;
+    color:#c7bdbd;
+}
+.imgCont {
+    width:20vw;
+    margin: 0 2.5vw 0 2.5vw;
+    background-color:#ffffff;
+    height:200px;
+    float:left;
+    text-align:center;
+    color: rgb(17, 13, 13);
+}
+.selectImg {
+    width:100%;
+    height:210px;
+}
+body {
+    background-image:url('../images/sw/BACKGROUND.jpg');
+    margin:0px;
+}
+.imgs {
+    height:150px;
+    width:150px;
+}
+.yourImg {
+    background-color: #67121f;
+    width:300px;
+    float:left;
+    text-align: center;
+    color:#c7bdbd;
+}
+.enemies {
+    width:100%;
+    background-color:#0bbb92;
+    float:left;
+    text-align:center;
+    color:rgb(22, 17, 17);
+
+}
+.defender {
+    float:left;
+    background-color:rgb(35, 32, 32);
+    text-align: center;
+    color:#c7bdbd;
+}
+.defeated {
+    float:left;
+    background-color:#641010;
+    text-align: center;
+    color:#c7bdbd;
+}
+.txt {
+    text-align:center;
+    background-color: rgb(22, 17, 17);
+    color:#c7bdbd;
+}
+#resetBtn {
+    width:100px;
+    height:70px;
+}
+attackBtn {
+    width:130px;
+    height:60px;
+}
+
