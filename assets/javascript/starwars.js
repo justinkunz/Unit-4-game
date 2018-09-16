@@ -197,26 +197,7 @@
             resultsText1 = 'You attacked your opponent with ' + charAP + ' attack power.'
             resultsText1Dis.text(resultsText1)
 
-            //decrease HP of yourChar
-            charHP = (charHP-defAP)
-            charHPDis.text(charHP)
-            
-            //increase AP of charAP
-            charAP = (charAP + charAPbase)
-            
-            //set text results for opponent attack
-            resultsText2 = 'Your opponent countered your attack by attacking you with ' + defAP + ' attack power.'
-            resultsText2Dis.text(resultsText2)
-            if(charHP <= 0){
-                winlose.text('You have lost!. Press Reset to play again.')
-                $('.defeated').append($('.yourImg'))
-                $('.defenderText').text('Champion')
-                $('#charText').text('Defeated')
-                resultsText1Dis.text('')
-                resultsText2Dis.text('')
-                $('.defenderText').text('')
-                return
-            }
+            //if defenders HP is under 0
             if(defHP <= 0){
                 //set defender text
                 $('#defeatedText').text('Defeated')
@@ -239,7 +220,30 @@
                 if(defenderCount===0){
                     winlose.text('You have won!! Press Reset to play again')
                 }
+                return
             }
+
+            //decrease HP of yourChar
+            charHP = (charHP-defAP)
+            charHPDis.text(charHP)
+            
+            //increase AP of charAP
+            charAP = (charAP + charAPbase)
+            
+            //set text results for opponent attack
+            resultsText2 = 'Your opponent countered your attack by attacking you with ' + defAP + ' attack power.'
+            resultsText2Dis.text(resultsText2)
+            if(charHP <= 0){
+                winlose.text('You have lost!. Press Reset to play again.')
+                $('.defeated').append($('.yourImg'))
+                $('.defenderText').text('Champion')
+                $('#charText').text('Defeated')
+                resultsText1Dis.text('')
+                resultsText2Dis.text('')
+                $('.defenderText').text('')
+                return
+            }
+
         });
 
         //reset button
